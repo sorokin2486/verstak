@@ -1,0 +1,31 @@
+{
+  "name": "verstak",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Верстак: чертежи под замер для Claude и OpenSCAD",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "tauri": "tauri",
+    "exe": "tauri build --no-bundle",
+    "validate": "node tools/validate.ts",
+    "preview": "node tools/preview.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.5"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@tauri-apps/cli": "^2.12.6",
+    "@types/node": "^24.0.0",
+    "@vitest/coverage-v8": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}
